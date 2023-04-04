@@ -1,0 +1,2 @@
+root: C:\xampp\htdocs\secret\nvm
+path: C:\Program Files\nodejs

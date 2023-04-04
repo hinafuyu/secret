@@ -1,0 +1,296 @@
+/*ヘッダー*/
+@charset "UTF-8";
+
+.nav {
+	width: 100%;
+	height: 65px;
+	display: flex;
+	align-items: flex-end;
+	position: absolute;
+	z-index: 10;
+}
+
+.nav.sticky {
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	transition: all 0.5s ease-out;
+	top: 0;
+	z-index: 15;
+}
+
+.nav {
+	background-color: rgb(50, 50, 50);
+	position: static;
+}
+
+.contact-body .nav {
+	background-color: rgb(50, 50, 50);
+	position: static;
+}
+
+.nav .sitename {
+	color: white;
+	margin-left: 5%;
+	font-size: 15px;
+}
+
+.nav .sitename a {
+	text-decoration: none;
+	color: white;
+}
+
+.burger-menu {
+	margin: 0 auto;
+}
+
+.nav .menu {
+	margin: 0 auto 10px;
+	text-align: center;
+}
+
+.nav .menu ul {
+	padding: 0;
+	display: flex;
+	gap: 50px;
+}
+
+.nav .menu ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+.nav .menu ul li a:hover {
+	color: rgb(216, 216, 216);
+}
+
+.nav .menu .sign-in {
+	margin-bottom: 10px;
+	color: white;
+	position: absolute;
+	right: 5vw;
+	top: 30px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+
+.nav .menu .sign-in:hover {
+	color: rgb(216, 216, 216);
+}
+
+.log{
+	text-decoration: none;
+	color: white;
+}
+
+.burger {
+	display: none;
+}
+
+.popup {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	z-index: 20;
+}
+
+.popup.vision {
+	visibility: visible;
+}
+
+.popup-back {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 23;
+}
+
+.popup .popup-item {
+	width: 40vw;
+	height: auto;
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+	z-index: 25;
+}
+
+.popup .popup-item h3 {
+	text-align: center;
+	padding: 15px 0;
+	border-bottom: solid lightgray;
+}
+
+.popup .popup-item .login form,
+.logInfor form {
+	border-bottom: solid lightgray;
+	padding: 25px 20px;
+}
+
+.popup .popup-item .login form input {
+	font-size: 18px;
+	width: 100%;
+	line-height: 40px;
+	border-radius: 10px;
+	border: solid lightgray;
+	margin-bottom: 10px;
+}
+
+.popup .popup-item .login form button {
+	font-size: 18px;
+	width: 100%;
+	line-height: 45px;
+	border: none;
+	border-radius: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgb(217, 36, 96);
+	letter-spacing: 1em;
+}
+
+.popup .popup-item .login div,
+.loginInfor div {
+	padding: 20px;
+}
+
+.popup .popup-item .login a {
+	display: block;
+	width: 100%;
+	border: solid lightgray;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.login .guide {
+	font-size: 12px;
+	font-weight: bold;
+	color: black;
+}
+
+.loginInfor .guide {
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	margin: 1% 0;
+}
+
+.loginInfor form input {
+	font-size: 18px;
+	width: 90%;
+	line-height: 45px;
+	border-radius: 10px;
+	border: solid lightgray;
+	margin-left: 5%;
+	margin-bottom: 10px;
+}
+
+.loginInfor button {
+	font-size: 18px;
+	width: 90%;
+	line-height: 45px;
+	border: none;
+	border-radius: 10px;
+	text-align: center;
+	letter-spacing: 1em;
+	margin: 1% 0;
+	margin-left: 6%;
+}
+
+.loginInfor .edit {
+	color: white;
+	background-color: rgb(217, 36, 96);
+}
+
+.loginInfor .withdrawal {
+	background-color: yellow;
+	color: black;
+}
+
+.loginInfor .logout {
+	background-color: gray;
+	color: white;
+}
+
+.newuser,
+.passreset {
+	font-size: 18px;
+	margin: 2% auto;
+}
+
+/*フッター*/
+.footer {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	transition: all 0.5s ease-out;
+	bottom: 0;
+	z-index: 15;
+}
+
+.footer p {
+	font-size: 18px;
+	color: white;
+}
+
+/*サインアップ*/
+.signup {
+	width: 50%;
+	margin: auto;
+	margin-top: 1.5%;
+	border: solid 1px gray;
+	background-color: antiquewhite;
+}
+
+.signup h1 {
+	font-size: 25px;
+	font-weight: bold;
+	margin: 5% auto 2%;
+	margin-left: 25%;
+}
+
+.signup p {
+	font-weight: bold;
+	color: black;
+	margin-left: 25%;
+}
+
+.signup .guide {
+	margin-bottom: 2%;
+}
+
+.signup span {
+	color: red;
+}
+
+.signup .register {
+	font-size: 18px;
+	width: 50%;
+	line-height: 45px;
+	border: none;
+	border-radius: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgb(217, 36, 96);
+	letter-spacing: 1em;
+	margin: 2% 0 2%;
+	margin-left: 25%;
+}
+
+.signup input,
+.signup select {
+	display: block;
+	width: 50%;
+	font-size: 18px;
+	height: 45px;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	margin: 5px 0;
+	margin-left: 25%;
+	padding: 5px;
+}
+

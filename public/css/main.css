@@ -1,0 +1,333 @@
+@charset "UTF-8";
+
+/*メインページ*/
+html {
+	scroll-behavior: smooth;
+}
+
+.main {
+	background-color: wheat;
+}
+
+.logo {
+	width: 15%;
+	height: 50%;
+	margin: 0 auto 5%;
+	padding: 3% 0 25%;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.logo img {
+	width: 80%;
+	height: 60%;
+	cursor: pointer;
+}
+
+.mainlogo {
+	position: absolute;
+}
+
+/*スライドショー*/
+.slideshow {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.slideshow img {
+	width: 100%;
+	height: 100vh;
+	display: none;
+	position: absolute;
+}
+
+/*シークレットページ*/
+.secret {
+	background-color: rgb(0,0,0);
+}
+
+.secretlogo {
+	width: 15%;
+	height: 50%;
+	margin: 0 auto 5%;
+	padding: 3% 0 25%;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.secretlogo img {
+	width: 80%;
+	height: 60%;
+	-webkit-filter: invert(1) ;
+	filter: invert(1);
+	cursor: pointer;
+}
+
+.secretlogoImg {
+	position: absolute;
+}
+
+/*お問い合わせ*/
+.contact {
+	border: solid lightgray;
+	border-radius: 20px;
+	margin: 40px 15vw;
+}
+
+.contact h3 {
+	text-align: center;
+	line-height: 60px;
+	border-bottom: solid lightgray;
+	margin-bottom: 10px;
+}
+
+.contact .form {
+	padding: 8px 20px 5px;
+}
+
+.contact .form .form-message {
+	font-size: 14px;
+	margin: 5px 0 10px;
+}
+
+.contact .gray-back {
+	font-size: 16px;
+	padding: 5px;
+	background-color: rgb(240, 240, 240);
+	border-top: solid gray;
+	border-bottom: solid gray;
+}
+
+.contact .form span {
+	color: red;
+}
+
+.contact .form input,
+.kind select {
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	height: 45px;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	margin: 5px 0;
+	padding: 5px;
+}
+
+.contact .form .contents p {
+	margin: 15px 0;
+}
+
+.contact .form textarea {
+	display: block;
+	width: 100%;
+	height: 330px;
+	font-size: 18px;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	margin: 5px 0;
+	padding: 5px;
+}
+
+.contact .form button {
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	height: 45px;
+	border: none;
+	border-radius: 5px;
+	padding-left: 5px;
+	text-align: center;
+	color: white;
+	background-color: rgb(217, 36, 96);
+	letter-spacing: 1em;
+	margin: 8px 0 20px;
+}
+
+.error-message {
+	color: red;
+}
+
+.complete-text {
+	font-size: 14px;
+	margin: 20px 20px 10px;
+}
+
+.complete .back-top {
+	margin: 0 20px 20px;
+}
+
+/*お問い合わせ完了ページ*/
+.complete-text {
+	font-size: 14px;
+	margin: 20px 20px 10px;
+}
+
+.complete .back-top {
+	margin: 0 20px 20px;
+}
+
+/*メイン観光地一覧*/
+.spotTitle {
+	width: 30%;
+	margin: 5% auto 0;
+	border-bottom: 5px solid red;
+}
+
+.spotTitle p {
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+	align-items: center;
+}
+
+.spot {
+	display: flex;
+}
+
+.spotImg {
+	width: 650px;
+	height: 650px;
+	border-radius: 5px;
+	margin: 0 5%;
+	margin-top: 5%;
+}
+
+.spotBody {
+	width: 100%;
+}
+
+.spotcontent {
+	width: 50%;
+	height: 30%;
+	padding: 10% 0 0;
+	margin-bottom: 7.5%;
+}
+
+.spotcontent h2 {
+	font-size: 30px;
+	font-weight: bolder;
+	margin-bottom: 10%;
+	border-bottom: 0.3rem solid navy;
+}
+
+.spotcontent p {
+	font-size: 25px;
+}
+
+.map {
+	width: 50%;
+	height: 30%;
+}
+
+/*シークレットページ観光地*/
+.secretTitle {
+	width: 30%;
+	margin: 5% auto 0;
+	border-bottom: 5px solid lightblue;
+}
+
+.secretTitle p {
+	font-size: 35px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	align-items: center;
+}
+
+.secretSpot {
+	display: flex;
+}
+
+.secretSpotBody {
+	width: 100%;
+}
+
+.secretcontent {
+	width: 50%;
+	height: 30%;
+	padding: 10% 0 0;
+	margin-bottom: 7.5%;
+}
+
+.secretcontent h2 {
+	font-size: 30px;
+	font-weight: bolder;
+	color: white;
+	margin-bottom: 10%;
+	border-bottom: 0.3rem solid lightpink;
+}
+
+.secretcontent p {
+	font-size: 25px;
+	color: white;
+}
+
+/*管理者用一覧ページ*/
+.table {
+	margin: 10% 10%;
+}
+
+.table h4 {
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 1%;
+}
+
+.userTable,
+.contactTable {
+	border: solid 5px lightpink;
+	width: 100%;
+	background-color: antiquewhite;
+	font-weight: bold;
+}
+
+th {
+	border: solid 3px lightpink;
+	text-align: center;
+	font-size: 18px;
+}
+
+td {
+	border: solid 3px lightpink;
+	text-align: center;
+	font-size: 15px;
+}
+
+.name {
+	width: 7.5%;
+}
+
+.kana {
+	width: 10%;
+}
+
+/*ブックマーク*/
+.bookmark {
+	background-color: wheat;
+}
+
+.liked {
+	color: yellow;
+}
+
+.bookmarkGuide {
+	font-size: 18px;
+	font-weight: bold;
+	margin: auto;
+	padding: 5% 0;
+	text-align: center;
+}
+
+.bookmarksecret {
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	margin: auto;
+	padding: 5% 0;
+	text-align: center;
+}
